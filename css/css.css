@@ -22,12 +22,12 @@ body {
     font-size: 5em;
 }
 
-.contenedor {
+.container {
     display: flex;
     width: 100%;
 }
 
-.column-3 {
+.colum3 {
     width: 33.33%;
     padding: 20px;
     border: 1px solid #3b4ccb;
@@ -55,7 +55,7 @@ body {
     background-color: #0cd8d5;
 }
 
-.ficha {
+.interes {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 20px;
@@ -77,12 +77,12 @@ body {
     margin-top: 3%;
 }
 
-.section1 {
+.sec1 {
     display: flex;
     width: 100%;
 }
 
-.section1 img {
+.sec1 img {
     width: 20%;
     flex-grow: 1;
     object-fit: cover;
@@ -92,10 +92,7 @@ body {
 }
 
 .section1 img:hover {
-    cursor: crosshair;
-    width: 40%;
-    opacity: 80;
-    filter: contrast(120%);
+
 }
 
 .imglugaresdeint {
@@ -104,13 +101,13 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    .contenedor {
+    .container {
         flex-direction: row;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .column-3 {
+    .colum3 {
         width: 100%;
     }
 
