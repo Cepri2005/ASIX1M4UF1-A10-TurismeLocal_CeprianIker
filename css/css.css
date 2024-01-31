@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+    color: #ffffff;
+}
+
+.fondo {
+    background-position: center;
+    height: 975px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('./../img/plaza_mayor.jpg');
+}
+
+.fondo h1 {
+    font-size: 5em;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+}
+
+.column-3 {
+    width: 33.33%;
+    padding: 20px;
+    border: 1px solid #3b4ccb;
+    text-align: center;
+}
+
+.menu {
+    background-color: rgb(208, 208, 208);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #a01212;
+}
+
+.contenido {
+    background-color: #0cd8d5;
+}
+
+.ficha {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.noticias {
+    background-color: rgb(208, 208, 208);
+}
+
+.noticias article {
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+#lugares {
+    margin-top: 3%;
+}
+
+.section1 {
+    display: flex;
+    width: 100%;
+}
+
+.section1 img {
+    width: 20%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border-radius: 7px;
+}
+
+.section1 img:hover {
+    cursor: crosshair;
+    width: 40%;
+    opacity: 80;
+    filter: contrast(120%);
+}
+
+.imglugaresdeint {
+    width: 75%;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column-3 {
+        width: 100%;
+    }
+
+    .fondo {
+        height: 575px;
+    }
+}
